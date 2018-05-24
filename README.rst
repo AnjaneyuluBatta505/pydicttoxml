@@ -21,7 +21,7 @@ Usage of Pydicttoxml
   }
   
   from pydicttoxml import dict2xml
-  xml = dict2xml(d, root_tag="data")
+  xml = dict2xml(d, root_tag_name="data")
   
   
 Output

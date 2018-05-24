@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
+import os
 import sys
 from distutils.core import setup
 
 CURRENT_PYTHON = sys.version_info[:2]
 REQUIRED_PYTHON = (3, 5)
+
+
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
 if CURRENT_PYTHON < REQUIRED_PYTHON:
@@ -13,14 +18,15 @@ if CURRENT_PYTHON < REQUIRED_PYTHON:
     sys.exit(1)
 setup(
     name='pydicttoxml',
-    version='0.0.1',
+    version='1.0.1',
     description='Convert python dictionary into a xml equivalent format',
     author=u'Anjaneyulu Batta',
     author_email='anjaneyulu.batta505@gmail.com',
     url='https://github.com/AnjaneyuluBatta505/pydicttoxml',
     packages=['pydicttoxml'],
+    keywords="convert dictionary into a xml",
+    long_description=read('README.rst'),
     classifiers=[
-        'Development Status :: 0.0.1',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
