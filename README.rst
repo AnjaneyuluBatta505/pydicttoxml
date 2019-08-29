@@ -1,9 +1,13 @@
-Pydicttoxml
-===========
-
-Convert python dictionary into a xml equivalent output
+Convert python dictionary into a xml
+====================================
+Install `"pydicttoxml"` using `pip`
+------------------------------------
++---------------------------------+
+| pip install pydicttoxml         |
++---------------------------------+
 
 Usage of Pydicttoxml
+--------------------
 
 .. code:: python
 
